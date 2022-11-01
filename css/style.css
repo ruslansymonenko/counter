@@ -48,15 +48,55 @@ select {
     font: inherit;
 }
 
+body{
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+    color: #222831;
+}
+
 .wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #ca657b, #be75a9, #9f8bcb, #759fda, #56b0d6, #62bbd3, #75c4d0, #8acdcd, #a3d7d7, #bbe2e2, #d3ecec, #eaf6f6);
 }
 .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    min-width: 1000px;
+    background-color: #eaf6f6;
+    border-radius: 10px;
+    -webkit-box-shadow: -1px 1px 24px 3px rgba(0, 0, 0, 0.521); 
+    box-shadow: -1px 1px 24px 3px rgba(0, 0, 0, 0.541);
 }
 .app__header {
+    font-size: 40px;
 }
 .app__output {
+    font-size: 120px;
 }
-.btns {
-}
+
 .app__btn {
+    height: 35px;
+    width: 110px;
+    background-color: #51a7bfd5;
+    color: #eaf6f6;
+    border-radius: 5px;
+    border: none;
+    transition: ease .5s;
+}
+.app__btn:hover{
+    background-color: #c986b6f4;
+}
+
+.app__btn:active{
+    transform: scale(0.94);
+}
+
+.app__btn + .app__btn{
+    margin-left: 60px;
 }
